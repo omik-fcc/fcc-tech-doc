@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+
+
+html,
+body {
+  color: #2f2f2f;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--default-blue, #303030);
+  font-weight: bold;
+}
+
+#navbar {
+  background-color: hsl(48, 100%, 67%);
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+
+}
+
+#navbar ul {
+  height: 55%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top-style: dashed;
+  border-top-width: thin;
+  border-top-color: hsl(48, 78%, 66%);
+}
+
+#navbar header {
+  padding-top:15px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 265px;
+}
+
+#navbar li {
+
+  margin: 1px;
+  text-align: center;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  border-bottom-color: hsl(48, 78%, 66%);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #navbar {
+
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 200px;
+    border: none;
+    z-index: 1;
+    height: 200px;
+  }
+
+  #navbar ul {
+    border-bottom-style: dashed;
+    border-bottom-width: thin;
+    border-bottom-color: hsl(48, 78%, 66%);
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 220px;
+  }
+
+}
